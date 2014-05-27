@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>YourTour</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css" media="screen">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#item1").hide();
+		$("#item2").hide();
+		$("#item3").hide();
+		$("#item4").hide();
+		$("#item5").hide();
+		$("#item6").hide();
+		$("#item7").hide();
+		$("#item8").hide();
+		$("#item9").hide();
+	});
+	function hideOrShow(item) {
+		$("#" + item).slideToggle("fast", "linear");
+	}
+	/* <![CDATA[ */
+	(function() {
+		try {
+			var s, a, i, j, r, c, l = document.getElementsByTagName("a"), t = document
+					.createElement("textarea");
+			for (i = 0; l.length - i; i++) {
+				try {
+					a = l[i].getAttribute("href");
+					if (a
+							&& "www.cloudflare.com/email-protection" == a
+									.substr(7, 35)) {
+						s = '';
+						j = 43;
+						r = parseInt(a.substr(j, 2), 16);
+						for (j += 2; a.length - j && a.substr(j, 1) != 'X'; j += 2) {
+							c = parseInt(a.substr(j, 2), 16) ^ r;
+							s += String.fromCharCode(c);
+						}
+						j += 1;
+						s += a.substr(j, a.length - j);
+						t.innerHTML = s.replace(/</g, "&lt;").replace(/>/g,
+								"&gt;");
+						l[i].setAttribute("href", "mailto:" + t.value);
+					}
+				} catch (e) {
+				}
+			}
+		} catch (e) {
+		}
+	})();
+	/* ]]> */
+</script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+<script>
+	var _gaq = _gaq || [];
+	_gaq.push([ '_setAccount', 'UA-23019901-1' ]);
+	_gaq.push([ '_setDomainName', "bootswatch.com" ]);
+	_gaq.push([ '_setAllowLinker', true ]);
+	_gaq.push([ '_trackPageview' ]);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www')
+				+ '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-responsive-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">YourTour</a>
+			</div>
+			<div class="navbar-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Weekender's</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">Looking For <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Adventure</a></li>
+							<li><a href="#">Peace</a></li>
+							<li><a href="#">Fun</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Palaces</a></li>
+							<li><a href="#">Forts</a></li>
+							<li><a href="#">Monuments</a></li>
+						</ul></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<input type="text" class="form-control col-lg-8"
+						placeholder="Search">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row">&nbsp;</div>
+	<div class="jumbotron text-center">
+		<h1>YourTour</h1>
+		<p>Unturn the stone of a new destination</p>
+		<p>
+			<!-- Button trigger modal -->
+			<button class="btn btn-primary btn-lg" data-toggle="modal"
+				data-target="#myModal">Plan My Travel</button>
+		</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Direction - North
+						India</h4>
+				</div>
+				<div class="modal-body">
+					<div class="list-group">
+						<a class="list-group-item active" href="#"
+							onClick="hideOrShow('item1')">
+							<h4 class="list-group-item-heading">
+								Vaishno Devi <span class="badge">(Distance : 1000 Km |
+									Altitude : 12000 ft | Temp : 5&deg;C)</span>
+							</h4>
+						</a>
+						<div class="row" id="item1">
+							<div class="row">&nbsp;</div>
+							<div class="col-md-3">
+								<div class="thumbnail">
+									<img src="images/Vaishno_devi.jpg" alt="Maa Vaishno">
+									<div class="caption text-center">
+										<h3>Maa Vaishno</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 well well-sm">
+								<p>In Hinduism, Vaishno Devi, also known as Mata Rani and
+									Vaishnavi, is a manifestation of the Mother Goddess or Durga.
+									The words "maa" and "mata" are commonly used in India for
+									"mother", and thus are often used in connection with Vaishno
+									Devi.</p>
+								<p>The words "mandir" and "mandira" are commonly used in
+									India for "Hindu temple", and so these words are also often
+									used in connection with Vaishno Devi. Vaishno Devi Mandir
+									(Hindi: वैष्णोदेवी मन्दिर) is one of the holy Hindu temples
+									dedicated to Shakti, located at the Trikuta Mountains within
+									the Indian state of Jammu and Kashmir.</p>
+							</div>
+							<div>
+								<a href="#" class="btn btn-success" role="button">Plan My
+									Trip</a>
+							</div>
+						</div>
+					</div>
+					<div class="list-group">
+						<a href="#" class="list-group-item active"
+							onClick="hideOrShow('item2')">
+							<h4 class="list-group-item-heading">
+								Wagah Border <span class="badge">(Distance : 990 Km |
+									Altitude : 2000 ft | Temp : 15&deg;C)</span>
+							</h4>
+						</a>
+						<div class="row" id="item2">
+							<div class="row">&nbsp;</div>
+							<div class="col-md-3">
+								<div class="thumbnail">
+									<img src="images/wagah_border.jpg" alt="Wagah Border">
+									<div class="caption text-center">
+										<h3>Wagah Border</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 well well-sm">
+								<p>Wagah (Punjabi (Gurmukhi): ਵਾਘਾ, Hindi: वाघा, Urdu:
+									واہگہ‎) is the only road border crossing between Pakistan and
+									India, and lies on the Grand Trunk Road between the cities of
+									Amritsar, Punjab, India, and Lahore, Punjab, Pakistan. The
+									border is located 22 km (13.75 mi) from Lahore and 32 km (19.88
+									mi) from Amritsar.</p>
+								<p>Wagah, named Wahga in Pakistan, is a village through
+									which the controversial Radcliffe Line, the boundary
+									demarcation line dividing India and Pakistan upon the Partition
+									of India, was drawn. The village was divided by independence in
+									1947. Today, the eastern half of the village remains in the
+									Republic of India while the western half is in Pakistan. It is
+									particularly known for the elaborate Wagah border ceremony that
+									happens at the border gate before 5PM each day</p>
+							</div>
+							<div>
+								<a href="#" class="btn btn-success" role="button">Plan My
+									Trip</a>
+							</div>
+						</div>
+					</div>
+					<div class="list-group">
+						<a href="#" class="list-group-item active"
+							onClick="hideOrShow('item3')">
+							<h4 class="list-group-item-heading">
+								Golden Temple <span class="badge">(Distance : 900 Km |
+									Altitude : 1800 ft | Temp : 25&deg;C)</span>
+							</h4>
+						</a>
+						<div class="row" id="item3">
+							<div class="row">&nbsp;</div>
+							<div class="col-md-3">
+								<div class="thumbnail">
+									<img src="images/golden_temple.jpg" alt="Golden Temple">
+									<div class="caption text-center">
+										<h3>Golden Temple</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 well well-sm">
+								<p>The Harmandir Sahib (Punjabi: ਹਰਿਮੰਦਰ ਸਾਹਿਬ), also Darbar
+									Sahib (Punjabi: ਦਰਬਾਰ ਸਾਹਿਬ, Punjabi pronunciation: [dəɾbɑɾ
+									sɑhɪb]) and informally referred to as the "Golden Temple", is a
+									prominent Sikh Gurdwara located in the city of Amritsar,
+									Punjab, India. It was built by the fifth Sikh guru, Guru Arjun,
+									in the 16th Century. In 1604, Guru Arjun completed the Adi
+									Granth, the holy scripture of Sikhism, and installed it in the
+									Gurudwara.</p>
+								<p>There are four doors to get into the Harmandir Sahib,
+									which symbolize the openness of the Sikhs towards all people
+									and religions. The present day Gurdwara was rebuilt in 1764 by
+									Jassa Singh Ahluwalia with the help of other Sikh Misls. In the
+									early nineteenth century, Maharaja Ranjit Singh secured the
+									Punjab region from outside attack and covered the upper floors
+									of the Gurdwara with gold, which gives it its distinctive
+									appearance and its English name.</p>
+							</div>
+							<div>
+								<a href="#" class="btn btn-success" role="button">Plan My
+									Trip</a>
+							</div>
+						</div>
+					</div>
+					<div class="list-group">
+						<a class="list-group-item active" href="#"
+							onClick="hideOrShow('item4')">
+							<h4 class="list-group-item-heading">
+								Vaishno Devi <span class="badge">(Distance : 1000 Km |
+									Altitude : 12000 ft | Temp : 5&deg;C)</span>
+							</h4>
+						</a>
+						<div class="row" id="item4">
+							<div class="row">&nbsp;</div>
+							<div class="col-md-3">
+								<div class="thumbnail">
+									<img src="images/Vaishno_devi.jpg" alt="Maa Vaishno">
+									<div class="caption text-center">
+										<h3>Maa Vaishno</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 well well-sm">
+								<p>In Hinduism, Vaishno Devi, also known as Mata Rani and
+									Vaishnavi, is a manifestation of the Mother Goddess or Durga.
+									The words "maa" and "mata" are commonly used in India for
+									"mother", and thus are often used in connection with Vaishno
+									Devi.</p>
+								<p>The words "mandir" and "mandira" are commonly used in
+									India for "Hindu temple", and so these words are also often
+									used in connection with Vaishno Devi. Vaishno Devi Mandir
+									(Hindi: वैष्णोदेवी मन्दिर) is one of the holy Hindu temples
+									dedicated to Shakti, located at the Trikuta Mountains within
+									the Indian state of Jammu and Kashmir.</p>
+							</div>
+							<div>
+								<a href="#" class="btn btn-success" role="button">Plan My
+									Trip</a>
+							</div>
+						</div>
+					</div>
+					<div class="list-group">
+						<a href="#" class="list-group-item active"
+							onClick="hideOrShow('item5')">
+							<h4 class="list-group-item-heading">
+								Wagah Border <span class="badge">(Distance : 990 Km |
+									Altitude : 2000 ft | Temp : 15&deg;C)</span>
+							</h4>
+						</a>
+						<div class="row" id="item5">
+							<div class="row">&nbsp;</div>
+							<div class="col-md-3">
+								<div class="thumbnail">
+									<img src="images/wagah_border.jpg" alt="Wagah Border">
+									<div class="caption text-center">
+										<h3>Wagah Border</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 well well-sm">
+								<p>Wagah (Punjabi (Gurmukhi): ਵਾਘਾ, Hindi: वाघा, Urdu:
+									واہگہ‎) is the only road border crossing between Pakistan and
+									India, and lies on the Grand Trunk Road between the cities of
+									Amritsar, Punjab, India, and Lahore, Punjab, Pakistan. The
+									border is located 22 km (13.75 mi) from Lahore and 32 km (19.88
+									mi) from Amritsar.</p>
+								<p>Wagah, named Wahga in Pakistan, is a village through
+									which the controversial Radcliffe Line, the boundary
+									demarcation line dividing India and Pakistan upon the Partition
+									of India, was drawn. The village was divided by independence in
+									1947. Today, the eastern half of the village remains in the
+									Republic of India while the western half is in Pakistan. It is
+									particularly known for the elaborate Wagah border ceremony that
+									happens at the border gate before 5PM each day</p>
+							</div>
+							<div>
+								<a href="#" class="btn btn-success" role="button">Plan My
+									Trip</a>
+							</div>
+						</div>
+					</div>
+					<div class="list-group">
+						<a href="#" class="list-group-item active"
+							onClick="hideOrShow('item6')">
+							<h4 class="list-group-item-heading">
+								Golden Temple <span class="badge">(Distance : 900 Km |
+									Altitude : 1800 ft | Temp : 25&deg;C)</span>
+							</h4>
+						</a>
+						<div class="row" id="item6">
+							<div class="row">&nbsp;</div>
+							<div class="col-md-3">
+								<div class="thumbnail">
+									<img src="images/golden_temple.jpg" alt="Golden Temple">
+									<div class="caption text-center">
+										<h3>Golden Temple</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 well well-sm">
+								<p>The Harmandir Sahib (Punjabi: ਹਰਿਮੰਦਰ ਸਾਹਿਬ), also Darbar
+									Sahib (Punjabi: ਦਰਬਾਰ ਸਾਹਿਬ, Punjabi pronunciation: [dəɾbɑɾ
+									sɑhɪb]) and informally referred to as the "Golden Temple", is a
+									prominent Sikh Gurdwara located in the city of Amritsar,
+									Punjab, India. It was built by the fifth Sikh guru, Guru Arjun,
+									in the 16th Century. In 1604, Guru Arjun completed the Adi
+									Granth, the holy scripture of Sikhism, and installed it in the
+									Gurudwara.</p>
+								<p>There are four doors to get into the Harmandir Sahib,
+									which symbolize the openness of the Sikhs towards all people
+									and religions. The present day Gurdwara was rebuilt in 1764 by
+									Jassa Singh Ahluwalia with the help of other Sikh Misls. In the
+									early nineteenth century, Maharaja Ranjit Singh secured the
+									Punjab region from outside attack and covered the upper floors
+									of the Gurdwara with gold, which gives it its distinctive
+									appearance and its English name.</p>
+							</div>
+							<div>
+								<a href="#" class="btn btn-success" role="button">Plan My
+									Trip</a>
+							</div>
+						</div>
+					</div>
+					<div class="list-group">
+						<a class="list-group-item active" href="#"
+							onClick="hideOrShow('item7')">
+							<h4 class="list-group-item-heading">
+								Vaishno Devi <span class="badge">(Distance : 1000 Km |
+									Altitude : 12000 ft | Temp : 5&deg;C)</span>
+							</h4>
+						</a>
+						<div class="row" id="item7">
+							<div class="row">&nbsp;</div>
+							<div class="col-md-3">
+								<div class="thumbnail">
+									<img src="images/Vaishno_devi.jpg" alt="Maa Vaishno">
+									<div class="caption text-center">
+										<h3>Maa Vaishno</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 well well-sm">
+								<p>In Hinduism, Vaishno Devi, also known as Mata Rani and
+									Vaishnavi, is a manifestation of the Mother Goddess or Durga.
+									The words "maa" and "mata" are commonly used in India for
+									"mother", and thus are often used in connection with Vaishno
+									Devi.</p>
+								<p>The words "mandir" and "mandira" are commonly used in
+									India for "Hindu temple", and so these words are also often
+									used in connection with Vaishno Devi. Vaishno Devi Mandir
+									(Hindi: वैष्णोदेवी मन्दिर) is one of the holy Hindu temples
+									dedicated to Shakti, located at the Trikuta Mountains within
+									the Indian state of Jammu and Kashmir.</p>
+							</div>
+							<div>
+								<a href="#" class="btn btn-success" role="button">Plan My
+									Trip</a>
+							</div>
+						</div>
+					</div>
+					<div class="list-group">
+						<a href="#" class="list-group-item active"
+							onClick="hideOrShow('item8')">
+							<h4 class="list-group-item-heading">
+								Wagah Border <span class="badge">(Distance : 990 Km |
+									Altitude : 2000 ft | Temp : 15&deg;C)</span>
+							</h4>
+						</a>
+						<div class="row" id="item8">
+							<div class="row">&nbsp;</div>
+							<div class="col-md-3">
+								<div class="thumbnail">
+									<img src="images/wagah_border.jpg" alt="Wagah Border">
+									<div class="caption text-center">
+										<h3>Wagah Border</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 well well-sm">
+								<p>Wagah (Punjabi (Gurmukhi): ਵਾਘਾ, Hindi: वाघा, Urdu:
+									واہگہ‎) is the only road border crossing between Pakistan and
+									India, and lies on the Grand Trunk Road between the cities of
+									Amritsar, Punjab, India, and Lahore, Punjab, Pakistan. The
+									border is located 22 km (13.75 mi) from Lahore and 32 km (19.88
+									mi) from Amritsar.</p>
+								<p>Wagah, named Wahga in Pakistan, is a village through
+									which the controversial Radcliffe Line, the boundary
+									demarcation line dividing India and Pakistan upon the Partition
+									of India, was drawn. The village was divided by independence in
+									1947. Today, the eastern half of the village remains in the
+									Republic of India while the western half is in Pakistan. It is
+									particularly known for the elaborate Wagah border ceremony that
+									happens at the border gate before 5PM each day</p>
+							</div>
+							<div>
+								<a href="#" class="btn btn-success" role="button">Plan My
+									Trip</a>
+							</div>
+						</div>
+					</div>
+					<div class="list-group">
+						<a href="#" class="list-group-item active"
+							onClick="hideOrShow('item9')">
+							<h4 class="list-group-item-heading">
+								Golden Temple <span class="badge">(Distance : 900 Km |
+									Altitude : 1800 ft | Temp : 25&deg;C)</span>
+							</h4>
+						</a>
+						<div class="row" id="item9">
+							<div class="row">&nbsp;</div>
+							<div class="col-md-3">
+								<div class="thumbnail">
+									<img src="images/golden_temple.jpg" alt="Golden Temple">
+									<div class="caption text-center">
+										<h3>Golden Temple</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 well well-sm">
+								<p>The Harmandir Sahib (Punjabi: ਹਰਿਮੰਦਰ ਸਾਹਿਬ), also Darbar
+									Sahib (Punjabi: ਦਰਬਾਰ ਸਾਹਿਬ, Punjabi pronunciation: [dəɾbɑɾ
+									sɑhɪb]) and informally referred to as the "Golden Temple", is a
+									prominent Sikh Gurdwara located in the city of Amritsar,
+									Punjab, India. It was built by the fifth Sikh guru, Guru Arjun,
+									in the 16th Century. In 1604, Guru Arjun completed the Adi
+									Granth, the holy scripture of Sikhism, and installed it in the
+									Gurudwara.</p>
+								<p>There are four doors to get into the Harmandir Sahib,
+									which symbolize the openness of the Sikhs towards all people
+									and religions. The present day Gurdwara was rebuilt in 1764 by
+									Jassa Singh Ahluwalia with the help of other Sikh Misls. In the
+									early nineteenth century, Maharaja Ranjit Singh secured the
+									Punjab region from outside attack and covered the upper floors
+									of the Gurdwara with gold, which gives it its distinctive
+									appearance and its English name.</p>
+							</div>
+							<div>
+								<a href="#" class="btn btn-success" role="button">Plan My
+									Trip</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="navbar footer">
+		<p class="text-center">
+			<a href="#" class="btn">About Us</a> <a href="#" class="btn">Contact
+				Us</a>
+		</p>
+	</div>
+</body>
+</html>
